@@ -1,6 +1,5 @@
 from Simple_drawing_window1 import Simple_drawing_window1
 from Simple_drawing_window2 import Simple_drawing_window2
-from Simple_drawing_window3 import Simple_drawing_window3
 
 from PySide6.QtCore import *
 from PySide6.QtWidgets import *
@@ -14,9 +13,6 @@ def main():
     
     w2 = Simple_drawing_window2()
     w2.show()
-
-    w3 = Simple_drawing_window3()
-    w3.show()
     
     app.exec()
 
