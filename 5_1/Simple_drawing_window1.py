@@ -14,7 +14,7 @@ class Simple_drawing_window1(Simple_drawing_window):
         p.begin(self)
         
         p.setPen(QColor(0 , 0 , 0))
-        p.setBrush(QColor(0 , 127 , 0))
+        p.setBrush(QColor(0 , 50 , 12))
         p.drawPolygon([QPoint(70 , 100) , QPoint(20 , 200) , QPoint(100 , 50) , QPoint( 40 , 90) , QPoint(51 , 700)])
         
         p.end()
