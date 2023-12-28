@@ -18,6 +18,10 @@ def main():
 
     w3 = Simple_drawing_window3()
     w3.show()
+
+
+
+    
     
     app.exec()
 
