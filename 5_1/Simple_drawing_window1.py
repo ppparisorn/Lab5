@@ -6,7 +6,7 @@ from Simple_drawing_window import *
 
 class Simple_drawing_window1(Simple_drawing_window):
     def __init__(self):
-        QWidget.__init__(self , None)
+        Simple_drawing_window.__init__(self , None)
         self.setWindowTitle("Simple Github Drawing")
         
     def paintEvent(self , e):
