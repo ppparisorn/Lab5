@@ -1,3 +1,4 @@
+from Simple_drawing_window import Simple_drawing_window
 from Simple_drawing_window1 import Simple_drawing_window1
 from Simple_drawing_window2 import Simple_drawing_window2
 from Simple_drawing_window3 import Simple_drawing_window3
