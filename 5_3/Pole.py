@@ -30,16 +30,26 @@ class Pole(object):
     def pushdisk(self , disk):
         self.stack.append(disk)
         
+        disk.newpos(self.pxpos , self.pypos)
         disk.showdisk()
         
-        self.pxpos += disk.height
         self.t.pu()
+        self.pypos += disk.dheight
         self.t.goto(self.pxpos , self.pypos)
         self.t.pd()
         
     def popdisk(self):
         x = self.stack.pop()
         x.cleardisk()
+        
+        x.newpos(self.pxpos , self.plength + 50)
+        
+        self.t.pu()
+        self.pypos -= x.dheight
+        self.t.goto(self.pxpos , self.pypos)
+        self.t.pd()
+        
+        x.showdisk()
         return x
         
         
@@ -47,4 +57,5 @@ x = Pole()
 
 x.showpole()
 x.pushdisk(Disk("", 0, 0, 50, 200))
-turtle.mainloop()
+x.popdisk()
+turtle.done()
