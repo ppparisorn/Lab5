@@ -2,8 +2,9 @@ import sys
 from PySide6.QtCore import *
 from PySide6.QtWidgets import *
 from PySide6.QtGui import *
+from Simple_drawing_window import *
 
-class Simple_drawing_window1(QWidget):
+class Simple_drawing_window1(Simple_drawing_window):
     def __init__(self):
         QWidget.__init__(self , None)
         self.setWindowTitle("Simple Github Drawing")
