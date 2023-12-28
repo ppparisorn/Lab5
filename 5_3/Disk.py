@@ -36,7 +36,7 @@ class Disk(object):
         self.t.clear()
         
 
-d1 = Disk("", 0, 0, 50, 200)
+"""d1 = Disk("", 0, 0, 50, 200)
 d1.showdisk()
 d1.cleardisk()
-turtle.mainloop()
+turtle.mainloop()"""
